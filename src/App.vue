@@ -13,7 +13,7 @@
       :totalCorrect="totalCorrect"
     >
     </results>
-    <button type="button" class="reset-btn" @click.prevent="reset">Reset</button>
+    <button type="button" class="reset-btn" @click.prevent="reset" v-if="this.questionsAnswered === questions.length">Reset</button>
   </div>
 </template>
 
